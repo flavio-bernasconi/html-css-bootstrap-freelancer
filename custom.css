@@ -1,0 +1,97 @@
+
+
+/* REGOLE GENERALI */
+
+.bk-color{
+  background: #1abc9c!important;
+  color: white;
+}
+
+.second-color{
+  background: #2c3e50!important
+}
+a:hover{
+  color: #1abc9c!important;
+}
+.title > h2 , .title > h3 , .title > h4{
+  color:#2c3e50!important;
+  font-size: 6rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.mt-1{
+  margin-top: 50px;
+}
+
+/* REGOLE MENU */
+
+.navbar{
+  margin-bottom: 0;
+  padding: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.navbar-brand{
+  font-size: 3rem;
+}
+.navbar-inverse .navbar-brand  {
+  color: white!important;
+}
+.nav li>a {
+  color: white!important;
+}
+/* REGOLE HEADER */
+header{
+  min-height: 70vh;
+  max-height: 75vh;
+  padding: 100px 0;
+}
+
+header img{
+  width: 250px;
+  margin:0 auto;
+}
+
+header h1{
+  font-size: 7rem;
+  font-weight: 900;
+}
+
+
+/*  SEPARATORE CON STELLA */
+
+.divider{
+  width: 50%;
+  margin: 0 auto;
+}
+.divider *{
+  display: inline-block;
+  float: none;
+  margin: 0 auto;
+}
+
+.divider::after{
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.stella{
+  font-size: 4rem;
+  margin:20px;
+}
+
+.linea{
+  height: 4px;
+  width: 70px;
+  background: white;
+}
+
+
+/*  PORFOLIO */
+
+.portfolio{
+  margin-top: 60px;
+}
