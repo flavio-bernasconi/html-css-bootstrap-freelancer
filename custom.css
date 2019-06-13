@@ -15,6 +15,9 @@ body, html{
   color: white;
 }
 
+.text-color{
+  color: #1abc9c!important;
+}
 .second-bk{
   background: #2c3e50!important
 }
@@ -29,7 +32,7 @@ a:hover{
 
 
 .title > h2 , .title > h3 , .title > h4{
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
@@ -44,7 +47,7 @@ a:hover{
 
 .navbar{
   margin-bottom: 0;
-  padding: 40px;
+  padding: 40px 0;
   font-weight: 700;
   letter-spacing: 1px;
   font-size: 16px;
@@ -100,7 +103,7 @@ header h1{
 
 .stella{
   font-size: 4rem;
-  margin:20px;
+  margin: 5px 20px;
 }
 
 .linea{
@@ -118,19 +121,37 @@ header h1{
   margin-bottom: 70px;
 }
 
-.images{
-  padding: 0 15px;
+.images > div.col-lg-4{
+  margin-bottom: 30px;
 }
 
 .images img{
-  margin-top: 40px;
   border-radius: 10px;
-  transition: .3s
 }
 
-.images img:hover{
-  opacity: .6
+/* overlay */
+.box {
+  position: relative;
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s;
+  border-radius: 10px;
+}
+
+.box:hover .overlay {
+  opacity: .6;
+}
+
+
+
+
 
 /*  ABOUT */
 .about{
@@ -144,7 +165,7 @@ header h1{
 
 .about .btn-default{
   margin-top: 40px;
-  background-color: transparent!important;
+  background-color: transparent;
   border: solid 1px white;
   width: 250px;
   height: 60px;
@@ -155,6 +176,19 @@ header h1{
   font-size: 2.5rem;
   text-transform: capitalize;
 }
+.download span{
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+.about .btn-default:hover{
+  background: white;
+}
+.about .btn-default:hover a , .about .btn-default:hover i{
+  color: #1abc9c
+}
+
+
 
 /*  FORM */
 
@@ -168,7 +202,15 @@ header h1{
 }
 
 .contact form .form-control{
-  border-bottom: solid 1px rgb(181, 181, 181);
+  border-color: transparent;
+  box-shadow: none;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  margin-top: 20px;
+  padding: 30px 0;
+}
+
+ ::placeholder{
+  font-size: 2rem;
 }
 
 .contact form .send{
@@ -176,18 +218,87 @@ header h1{
   padding: 15px 30px;
   font-size: 2.5rem;
   border:none;
+}
+.contact form .send:hover{
+  color: white;
+  background: #169e83!important;
+}
+
+/* FOOTER */
+footer .container{
+  color:white;
+  padding:50px 0;
+}
+
+footer .second-bk .row.text-center div{
+  margin-bottom: 20px;;
+}
+
+footer p{
+  font-size: 16px;
+}
+
+.footer-title{
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.foot{
+  height: 60px;
+  background: #1a252f;
+  position: relative;
+}
+
+
+.foot a{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  color: white
+}
+
+footer .icons a{
+  font-size: 2.7rem;
+  color: white;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border: solid 2px white;
+  border-radius: 50%;
+  margin: 10px;
+  position: relative;
+}
+footer .icons i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+footer .icons a:hover{
+  border: solid 2px white;
+  background: white;
+  color: #2c3e50!important
 
 }
 
 
 
+/* responsive */
 
 @media(max-width:767px){
   header{
     min-height: 50px;
+    max-height: none;
   }
   header h1{
     font-size: 4rem;
+  }
+  .navbar-brand{
+    font-size: 2.3rem;
+    line-height: 3rem;
   }
   .images{
     padding:0 50px;
@@ -199,6 +310,15 @@ header h1{
     padding: 0 40px;
     margin: 10px 0;
     font-size: 2rem;
+  }
+  footer .second-bk .row.text-center div{
+    margin-bottom: 70px;
+    padding: 0 50px;
+  }
+  footer .icons a{
+    font-size: 2rem;
+    height: 40px;
+    width: 40px;
   }
 }
 @media(min-width:768px){
