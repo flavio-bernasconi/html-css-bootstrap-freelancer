@@ -32,7 +32,7 @@
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right text-uppercase">
-              <li class="active"><a href="#">portfolio</a></li>
+              <li><a href="#">portfolio</a></li>
               <li><a href="#">about</a></li>
               <li><a href="#">contact</a></li>
             </ul>
@@ -59,12 +59,13 @@
       <!-- sezione porfolio -->
       <div class="container portfolio">
         <div class="row">
-          <div class="col-xs-12 title text-center">
-            <h2 class=" text-uppercase second-color">portfolio</h2>
-            <div class="divider">
-              <div class="linea second-bk"></div>
-              <div class="stella second-color"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></div>
-              <div class="linea second-bk"></div>
+            <div class="col-xs-12 title text-center">
+              <h2 class=" text-uppercase second-color">portfolio</h2>
+              <div class="divider">
+                <div class="linea second-bk"></div>
+                <div class="stella second-color"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></div>
+                <div class="linea second-bk"></div>
+              </div>
             </div>
           </div>
           <div class="row images">
@@ -88,7 +89,6 @@
             </div>
           </div>
         </div>
-      </div>
 
           <!-- sezione about -->
           <div class="container-fluid bk-color mt-1 about">
@@ -102,18 +102,67 @@
                     <div class="linea"></div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-lg-offset-2  col-xs-12">
+                <!-- test about-->
+                <div class="col-lg-4 col-lg-offset-2 col-sm-4 col-sm-offset-2  col-xs-12">
                   <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
                 </div>
-                <div class="col-lg-4  col-xs-12">
+                <div class="col-lg-4 col-sm-4 col-xs-12">
                   <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
                 </div>
-                <div class="col-lg-3">
-                  <a href="#" class="btn btn-xl btn-outline-light">sdfsadfdsa</a>
+                <!-- bottone download -->
+                <div class="col-xs-12 text-center">
+                  <button type="button" class="btn btn-default">
+                    <a href="#" class="">download</a>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
+
+
+          <!-- sezione form -->
+          <div class="container contact">
+            <div class="row">
+              <div class="col-xs-12 title text-center">
+                <h3 class="second-color">contact me</h3>
+                <div class="divider">
+                  <div class="linea second-bk"></div>
+                  <div class="stella "><span class="glyphicon glyphicon-star" aria-hidden="true"></span></div>
+                  <div class="linea second-bk"></div>
+                </div>
+              </div>
+              <div class="col-xs-12 mt-1">
+                <form class="form-horizontal" action="/action_page.php">
+                  <div class="form-group">
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="email" placeholder=" email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="pwd" placeholder=" password">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-10">
+                      <textarea name="message" class="form-control" id="message" placeholder=" message" ></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class=" col-sm-10">
+                      <button type="submit" class="btn btn-default send bk-color">Send</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
 
 
 
